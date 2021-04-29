@@ -18,31 +18,60 @@ body {
 
     main {
         
-        width: 900px;
-        height: 400px;
+        width: 600px;
+        height: 600px;
         border: solid 2px black;
-        position: relative;
-
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        // perspective: 900px;
+        transition: 1s;
+        transform: perspective(900px) rotateY(30deg);
+        transform-origin: left;
+        transform-style: preserve-3d;
+
+        &:hover {
+            transform: perspective(900px) rotateY(30deg) rotateX(45deg);
+        }
+        
 
         div {
-            width: 300px;
-            height: 300px;
-            border: solid 1px brown;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        div:nth-of-type(1) {
+            border: solid 10px brown;
+            transform: rotateY(30deg);
+        }
+
+        div:nth-of-type(2) {
+            border: solid 10px blue;
+            transform: rotateY(60deg);
+        }
+
+        div:nth-of-type(3) {
+            border: solid 10px darkorange;
+            transform: rotateY(90deg);
+        }
+
+        div:nth-of-type(4) {
+            border: solid 10px blueviolet;
+            transform: rotateY(120deg);
         }
     }
 
-    main::before {
-        content: "AmosChenYQ";
-        width: 200px;
-        height: 200px;
-        border: solid 2px blue;
-        position: absolute;
-        // top: 0;
-        // left: 0;
-    }
+    // main::before {
+    //     content: "AmosChenYQ";
+    //     width: 200px;
+    //     height: 200px;
+    //     border: solid 2px blue;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
 
     // main::after {
     //     content: "CHENYINGQIN";
