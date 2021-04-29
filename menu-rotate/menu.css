@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+body nav {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+}
+body nav::after {
+  content: "AmosChenYQ";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+}
+body nav:hover ul {
+  transform: scale(1);
+}
+body nav ul {
+  transform: scale(0);
+  transition: 0.5s;
+  list-style-type: none;
+  width: 300px;
+  height: 300px;
+}
+body nav ul li {
+  height: 80px;
+  width: 80px;
+  background-color: #e74c3c;
+  font-size: 3em;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: 1s;
+  transform-origin: 150px 150px;
+}
+body nav:hover ul li:nth-of-type(1) {
+  transform: rotate(40deg);
+}
+body nav:hover ul li:nth-of-type(1) span {
+  transform: rotate(320deg);
+}
+body nav:hover ul li:nth-of-type(2) {
+  transform: rotate(80deg);
+}
+body nav:hover ul li:nth-of-type(2) span {
+  transform: rotate(640deg);
+}
+body nav:hover ul li:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+body nav:hover ul li:nth-of-type(3) span {
+  transform: rotate(960deg);
+}
+body nav:hover ul li:nth-of-type(4) {
+  transform: rotate(160deg);
+}
+body nav:hover ul li:nth-of-type(4) span {
+  transform: rotate(1280deg);
+}
+body nav:hover ul li:nth-of-type(5) {
+  transform: rotate(200deg);
+}
+body nav:hover ul li:nth-of-type(5) span {
+  transform: rotate(1600deg);
+}
+body nav:hover ul li:nth-of-type(6) {
+  transform: rotate(240deg);
+}
+body nav:hover ul li:nth-of-type(6) span {
+  transform: rotate(1920deg);
+}
+body nav:hover ul li:nth-of-type(7) {
+  transform: rotate(280deg);
+}
+body nav:hover ul li:nth-of-type(7) span {
+  transform: rotate(2240deg);
+}
+body nav:hover ul li:nth-of-type(8) {
+  transform: rotate(320deg);
+}
+body nav:hover ul li:nth-of-type(8) span {
+  transform: rotate(2560deg);
+}
+body nav:hover ul li:nth-of-type(9) {
+  transform: rotate(360deg);
+}
+body nav:hover ul li:nth-of-type(9) span {
+  transform: rotate(2880deg);
+}

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  width: 20rem;
+  height: 20rem;
+  border: solid 0.5rem black;
+  background-color: greenyellow;
+  overflow: hidden;
+  position: relative;
+}
+body ul li span {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem #333333;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 3;
+}
+body ul li img {
+  width: 100%;
+  z-index: 2;
+}
+body ul li div {
+  padding: 0;
+  margin: 0;
+  height: 20rem;
+  width: 20rem;
+  background-color: gray;
+  background-clip: border-box;
+  position: relative;
+  z-index: 1;
+}
+body ul li div h2 {
+  margin: 0;
+  text-align: center;
+  line-height: 20rem;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+body ul li:hover {
+  cursor: pointer;
+}
+body ul li:hover img {
+  display: none;
+  z-index: -2;
+}

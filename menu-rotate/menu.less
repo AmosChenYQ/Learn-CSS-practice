@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    background-color: #2c3e50;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    width           : 100vw;
+    height          : 100vh;
+
+    nav {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+        }
+
+        &::after {
+            content: "AmosChenYQ";
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content : center;
+            align-items     : center;
+            color: white;
+            font-size: 2em;
+        }
+
+        &:hover ul {
+            transform: scale(1);
+        }
+
+        ul {
+            transform: scale(0);
+            transition: 0.5s;
+            list-style-type    : none;
+            width              : 300px;
+            height             : 300px;
+
+            li {
+                height          : 80px;
+                width           : 80px;
+                background-color: #e74c3c;
+                font-size       : 3em;
+                border-radius   : 50%;
+                color           : white;
+                display         : flex;
+                justify-content : center;
+                align-items     : center;
+                position        : absolute;
+                transition      : 1s;
+                transform-origin: 150px 150px;
+            }
+
+        }
+
+        each(range(9), {
+            &:hover ul li:nth-of-type(@{value}) {
+                transform: rotate(@value * 40deg);
+            }
+
+            &:hover ul li:nth-of-type(@{value}) span {
+                transform: rotate(@value * 360 - @value * 40deg);
+            }
+        }
+    );
+    }
+
+
+}

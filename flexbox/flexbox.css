@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding-left: 100px;
+  padding-top: 50px;
+}
+body article {
+  width: 400px;
+  height: 500px;
+  border: solid 5px silver;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+body article section {
+  flex: 1 0 100px;
+  background-color: blueviolet;
+  background-clip: content-box;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+body article section div {
+  font-size: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body article section span {
+  padding: 10px;
+  background-color: #333333;
+  cursor: pointer;
+}

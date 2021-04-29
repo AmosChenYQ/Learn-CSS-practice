@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+
+body {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        
+        width: 900px;
+        height: 400px;
+        border: solid 2px black;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            width: 300px;
+            height: 300px;
+            border: solid 1px brown;
+        }
+    }
+
+    main::before {
+        content: "AmosChenYQ";
+        width: 200px;
+        height: 200px;
+        border: solid 2px blue;
+        position: absolute;
+        // top: 0;
+        // left: 0;
+    }
+
+    // main::after {
+    //     content: "CHENYINGQIN";
+    //     width: 200px;
+    //     height: 200px;
+    //     border: solid 2px red;
+    //     // position: absolute;
+    // }
+}

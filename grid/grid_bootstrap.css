@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    padding-left: 50px
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+article {
+    width: 300px;
+    height: 300px;
+    border: solid 5px silver;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div[class^="col"] {
+    background-color: blueviolet;
+    padding: 10px;
+    background-clip: content-box;
+    border: solid 1px blueviolet;
+    box-sizing: border-box;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.col-1 {
+    grid-column-end: span 1;
+}
+
+.col-2 {
+    grid-column-end: span 2;
+}
+
+.col-3 {
+    grid-column-end: span 3;
+}
+
+.col-4 {
+    grid-column-end: span 4;
+}
+
+.col-5 {
+    grid-column-end: span 5;
+    gap
+}

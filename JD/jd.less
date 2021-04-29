@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+body {
+    header {
+        height          : 5rem;
+        width: 100%;
+        border-bottom   : solid 0.5rem fuchsia;
+        box-shadow      : 0 10px 10px #AAAAAA;
+        background-color: darkcyan;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+
+    box-sizing : border-box;
+
+    article {
+        margin-top : 200px;
+        margin-left: 400px;
+        position   : relative;
+        width      : 10rem;
+        height     : 400rem;
+
+        div {
+            border-collapse: collapse;
+            height         : 4rem;
+            border         : solid 0.5rem black;
+            text-align     : center;
+            line-height    : 4rem;
+            position       : relative;
+        }
+
+        div:nth-of-type(1) {
+            width           : 10rem;
+            background-color: red;
+            background-clip : border-box;
+            z-index         : 1;
+        }
+
+        div:nth-of-type(2) {
+            position        : absolute;
+            width           : 20rem;
+            right           : -1rem;
+            top             : 4rem;
+            background-color: blue;
+            display         : none;
+        }
+
+    }
+
+    article:hover {
+
+        div:nth-of-type(1) {
+            border-bottom: none;
+        }
+
+        div:nth-of-type(2) {
+            display: block;
+        }
+    }
+}
