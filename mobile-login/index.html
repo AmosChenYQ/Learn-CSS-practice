@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Login</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet" href="./mobile-login.css">
+</head>
+
+<body>
+    <main>
+        <div>Login</div>
+        <div>Register</div>
+    </main>
+    <nav>
+        <a href="javascript:;" onclick="change('login')">Login</a>
+        <a href="javascript:;" onclick="change('register')">Register</a>
+    </nav>
+    <script>
+        function change(t) {
+            switch (t) {
+                case 'login':
+                    $("main").removeClass().addClass('login');
+                    break;
+                case 'register':
+                    $("main").removeClass().addClass('register');
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
