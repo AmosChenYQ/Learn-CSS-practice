@@ -1,0 +1,45 @@
+body header {
+  border-bottom: solid 5px #16a085;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+body header div.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+body header div.navbar a.logo {
+  color: #16a085;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-right: 20px;
+}
+body header div.navbar div.collapse {
+  display: flex;
+  flex-grow: 1;
+}
+body header div.navbar div.collapse ul.links {
+  display: flex;
+  margin-right: auto;
+}
+body header div.navbar div.collapse ul.links li a {
+  color: #777;
+  margin: 0 10px;
+}
+body header div.navbar div.collapse ul.links li a:hover {
+  color: #333;
+  font-weight: bold;
+}
+body header div.navbar div.form a {
+  border: solid 1px #16a085;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+}
+body header div.navbar div.form a.form-bg {
+  background-color: #16a085;
+  color: white;
+}
+@media only screen and (max-width: 960px) {
+  body header div.navbar div.collapse {
+    display: none;
+  }
+}
