@@ -1,0 +1,9 @@
+.generate-margins(6);
+
+.generate-margins(@n, @i: 1) when (@i =< @n) {
+    .mb-@{i} {
+        margin-bottom: ~"@{i}rem";
+    }
+
+    .generate-margins(@n, (@i + 1));
+}
